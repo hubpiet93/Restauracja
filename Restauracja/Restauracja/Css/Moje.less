@@ -1,2 +1,46 @@
-﻿body {
+@kolortlamenu: #acd108;
+@kolorpodkresleniamenu: #c24c2b;
+
+
+
+.menu{
+    background-color: @kolortlamenu;
+    >.navbar{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: @kolortlamenu;
+        >.navbar-header{
+            background-color: @kolortlamenu;
+        }
+        >.navbar-collapse{
+            background-color: @kolortlamenu;
+            >.navbar-nav{
+                   background-color: @kolortlamenu;
+                    li{
+                        margin-right: 10px;
+                        border-bottom: 4px solid @kolortlamenu;
+                        a{
+                            background-color: @kolortlamenu;
+                            color: dimgray;
+                            &:hover{
+                                color:black;
+                            }
+                        }
+                        &:hover{
+                            border-bottom-color:  @kolorpodkresleniamenu;
+                        }
+                    }
+                    >.active{
+                        background-color: #ddd;
+                        border-bottom-color:  @kolorpodkresleniamenu;
+                        >a{
+                            color:black;
+                        }
+                        &:hover{
+                            border-bottom-color:  @kolorpodkresleniamenu;
+                        }
+                    }
+            }
+        }
+    }
 }
